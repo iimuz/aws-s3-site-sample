@@ -1,0 +1,19 @@
+{
+  "name": "aws-s3-site-sample",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sample project for deploying static site to AWS S3 + CloudFront + WAF using CDK",
+  "workspaces": [
+    "infrastructure",
+    "frontend"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace=frontend",
+    "dev": "npm run dev --workspace=frontend",
+    "deploy": "npm run deploy --workspace=infrastructure",
+    "diff": "npm run diff --workspace=infrastructure",
+    "synth": "npm run synth --workspace=infrastructure"
+  },
+  "author": "",
+  "license": "MIT"
+}
